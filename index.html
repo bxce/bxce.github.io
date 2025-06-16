@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Breathe</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Breathe</h1>
+
+    <div class="controls">
+      <button onclick="setDuration(1)">1 Min</button>
+      <button id="toggleCustom" onclick="toggleCustomInput()">＋</button>
+
+      <div id="customContainer" class="hidden">
+        <input type="number" id="customTime" placeholder="Minutes" min="1" max="60" />
+        <button onclick="setCustomTime()">OK</button>
+      </div>
+
+      <button id="startBtn" onclick="toggleBreathing()" disabled>Start</button>
+    </div>
+
+    <div class="circle-container">
+      <div class="circle" id="breathingCircle"></div>
+    </div>
+
+    <p id="instruction">Duration?</p>
+  </div>
+
+  <!-- Sound effects -->
+  <audio id="inhaleSound" src="sounds/inhale.mp3" preload="auto"></audio>
+  <audio id="holdSound" src="sounds/hold.mp3" preload="auto"></audio>
+  <audio id="exhaleSound" src="sounds/exhale.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

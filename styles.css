@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+    text-align: center;
+    font-style: bold ;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin: 20px 0;
+    color: #ffffff;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    z-index: 2;
+  }
+  
+  .controls button,
+  .controls input {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  button:disabled {
+    background-color: #444;
+    color: #888;
+  }
+  
+  .controls button {
+    background-color: #f38721;
+    color: white;
+  }
+  
+  #toggleCustom {
+    background-color: #43a047;
+  }
+  
+  #customContainer {
+    margin-top: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .controls input {
+    width: 100px;
+    text-align: center;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #555;
+  }
+  
+  .circle-container {
+    position: relative;
+    height: 220px;
+    margin-top: 60px;
+    z-index: 1;
+  }
+  
+  .circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #f38721;
+    transition: transform 4s ease-in-out;
+  }
+  
+  .inhale {
+    transform: scale(1.5);
+    background: #f38721;
+  }
+  
+  .exhale {
+    transform: scale(1);
+    background: #f38721;
+  }
+  
+  .hold {
+    transform: scale(1.5);
+    background: #ab47bc;
+    transition: none;
+  }
+  
+  #instruction {
+    margin-top: 0px;
+    font-size: 1.4rem;
+    color: #cccccc;
+  }
+  
